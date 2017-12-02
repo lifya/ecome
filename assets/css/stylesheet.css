@@ -1,0 +1,385 @@
+body{
+  background-image: url(../images/gambar-coklat.jpg);
+}
+.btn:hover {
+	background-color: #ededed !important;
+	color: #3c3c3c !important;
+	border: 1px solid #fff !important;
+}
+.navbar{
+	background-color: #222222 !important;
+	text-transform: uppercase;
+	font-family: Arial;
+	font-weight: 700;
+}
+.navbar img{
+  height: 40px;
+  width: 150px;
+}
+.navbar a{
+	color: #fff !important;
+	opacity: 0.7;
+}
+.navbar a:hover{
+	opacity: 1;
+	background-color: #CD853F !important;
+}
+#Home {
+  background-image: url(../images/cosmic.png);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100%;
+  color: black;
+  text-align: center;
+  padding: auto;
+  padding-top: 10%;
+  position: relative;
+  padding-bottom: 15%;
+}
+#Home img {
+  width:400px ;
+   height:140px;
+}
+.header .btn{
+	border-radius: 0;
+	margin: 40px 20px;
+	font-family: Arial;
+  border: solid 1px;
+}
+
+#recent_work {
+  padding-top: 15px;
+  font-family: Alice;
+}
+
+#rowPortf {
+  margin: 0 100px 0 100px; 
+  padding-bottom: 25px;
+}
+
+#carousel {
+  width: 700px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.devices {
+  position: relative;
+  height: 575px;
+  overflow: hidden;
+}
+
+.mobile {
+  background: url(../images/gambar7.png) no-repeat -278px -479px;
+  position: absolute;
+  width: 130px;
+  height: 251px;
+  top: 330px;
+  left: 520px;
+  z-index: 3;
+}
+
+.mobile img {
+  position: absolute;
+  width: 108px;
+  height: 162px;
+  top: 41px;
+  left: 11px;
+  
+}
+
+.tablet {
+  background: url(../images/gambar7.png) no-repeat 0 -470px;
+  width: 264px;
+  height: 348px;
+  z-index: 2;
+  position: absolute;
+  top: 227px;
+  overflow: hidden;
+}
+.tablet img {
+ width: 212px;
+  height: 290px;
+  position: absolute;
+  top: 30px;
+  left:25px;
+}
+
+.desktop {
+  position: absolute;
+  width: 594px;
+  height: 457px;
+  background: url(../images/gambar7.png) no-repeat 0 0;
+  top: 0px;
+  left: 100px;
+  overflow: hidden;
+}
+.desktop img {
+  position: absolute;
+  width: 549px;
+  height: 315px;
+  left:20px;
+  top:22px;
+}
+.carousel-control:hover {
+  background-color: rgba(255,255,255,0.5)
+}
+
+.row-centerd {
+  text-align: center;
+}
+.fixed {
+  position: fixed;bottom: 0;left: 0;
+  border-radius: 0, 30px 0 0!important;
+}
+
+/*Penjelasan dari kode CSS @media di atas adalah, jadi ketika sebuah 
+website di buka di ukuran layar dengan lebar (width) 900px atau kurang dari 900px maka ukuran font, 
+yang size aslinya 25px akan mengecil sebesar 20px, dan jika website tersebut di buka di ukuran layar dengan lebar (width) 500px atau 
+kurang dari 500px maka size nya akan mengecil menjadi 14px.
+*/
+.frosted {
+  background-color: rgba(256,256,256,0.8);
+  width: 100%;
+  height: auto;
+  margin: auto;
+  /*border-radius: 15px;
+  margin-top: 30px;
+  padding: 20px;*/
+  overflow: auto;
+}
+
+@media only screen and (max-width :992px) {
+  .jumbotron {margin: 0 auto;}
+  #rowPortf {margin: 0 auto}
+}
+@media only screen and (max-width: 768px) {
+  .img-zoom-out {
+    margin: 30px 70px 30px 90px;
+  }
+  #Hd {
+    margin: 50px,0 50px 0 ;
+    padding: 0 0 50px; 0
+  }
+  #rowPortf {
+    margin: 0 0px 0 auto; overflow: hidden;
+  }
+}
+img {
+  height:100%; width:100%;
+  border-radius: 5px;
+  }
+
+#modal .modal-dialog .modal-content .modal-footer .btn{
+	border-radius: 0;
+}
+
+.footer{
+	padding: 30px;
+	color: #cccccc;
+	background-color: #222222;
+	font-family: Arial;
+}
+.footer .social{
+	font-size: 20px;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	padding: 5px;
+	border: 1px solid #cccccc;
+	margin-bottom: 10px;
+	margin-right: 5px;
+}
+
+.footer input{
+	height: 40px;
+	width: 160px;
+	padding-bottom: 5px;
+	border: none;
+	background-color: #cccccc;
+	color: #000;
+}
+.footer .btn{
+	padding: 10px 5px 10px;
+	border-radius: 0;
+	margin : -3px 0 0 5px;
+}
+
+h1#header {
+  text-align: center;
+  padding: 50px;
+  font-size: 62px;
+  font-family: "Pacifico";
+  text-shadow: 0 2px 2px #3c77b3;
+}
+
+/*About*/
+#About{
+  padding: 0 100px 100px;
+}
+.AboutGroup{
+  padding: 50px 0 80px;
+  font-family: Alice;
+}
+.text-primary{
+  margin-top: 10%;
+  border-color: black;
+  color:black;
+}
+
+.AboutGroup img{
+  height : 150px;
+  width: 150px;
+  margin-top: 80px;
+}
+.AboutGroup a:hover i{
+  background: rgba(1,1,1,0.8);
+}
+.article-wrapper {
+  -moz-transition: width 0.4s;
+  -o-transition: width 0.4s;
+  -webkit-transition: width 0.4s;
+  transition: width 0.4s;
+}
+
+article {
+  position: relative;
+  padding-left: 180px;
+  padding-right: 75px;
+  height: 150px;
+  margin-bottom: 30px;
+  background-color: #FFF;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+article .img-wrapper {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  -moz-border-radius: 120px;
+  -webkit-border-radius: 120px;
+  border-radius: 120px;
+  background-color: #D2691E;
+  padding: 8px;
+  z-index: 1000;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+article .img-wrapper img {
+  -moz-border-radius: 70px;
+  -webkit-border-radius: 70px;
+  border-radius: 70px;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  width: 150px;
+  height: 150px;
+}
+article .container{
+  position: relative;
+}
+article h1 {
+  height: 75px;
+  line-height: 80px;
+  font-size: 24px;
+  border-bottom: 2px solid #CDE;
+  color: #D2691E;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+article p {
+  color: black;
+}
+article a {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  line-height: 100px;
+  text-align: center;
+  width: 100%;
+  background-color: #FFF;
+  font-size: 48px;
+  font-style: italic;
+  opacity: 0;
+  color: #D2691E !important;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  text-decoration: none !important;
+  -moz-border-radius: 150px;
+  -webkit-border-radius: 150px;
+  border-radius: 150px;
+  font-family: "Pacifico";
+  text-shadow: 0 1px 1px #AAA;
+}
+article:hover .img-wrapper {
+  padding: 5px;
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+article:hover .img-wrapper img {
+  width: 160px;
+}
+article:hover a {
+  opacity: 1;
+}
+
+/*TUBES*/
+/*@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+* {
+  box-sizing: border-box;
+}*/
+/*--TUBES--*/
+#tubes{
+  margin-right: 20%;
+  margin-left: 10%;
+  margin-top: 50%;
+  color: white;
+}
+#tubes p{
+  font-size: 20px;
+  text-align: center;
+}
+
+#gambar1{
+  width: 250px;
+  height: 250px; 
+  float: right; 
+}
+#gambar2{
+  width: 250px;
+  height: 250px;  
+  float: left; 
+  margin-right: 30%;
+}
+#baris{
+  margin-bottom: 10%;
+}
+.container .ThumbnailText{
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+.container .ThumbnailText h3{
+  color: brown;
+}
+hr{
+  border: 30px;
+}
+#tubes{
+  margin-top: 10%;
+}
+/*--TUBES--*/
