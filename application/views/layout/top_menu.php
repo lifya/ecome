@@ -1,20 +1,23 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?><!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>COSMIC</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" /> <!-- Complete CSS -->                                  
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/stylesheet.css">                                                                      <!-- Jenis huruf berubah -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> <!-- JQuery -->   
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!-- Complete JavaScript -->
+    </head>
 <!-- link websitenya http://getbootstrap.com/components/#navbar -->
 <!-- Navbar default, Navbar adalah komponen meta responsif yang-
      -berfungsi sebagai "header navigasi/kepala halaman yang berfungsi kelanjutan"-
      -untuk aplikasi atau situs Anda. Mereka mulai runtuh (dan dapat diganti-
      -dalam tampilan seluler dan menjadi horizontal karena lebar viewport yang-
      -tersedia meningkat -->
-<!DOCTYPE html>
-<html>
-<head>
-  <title>HOME</title>
-     <link rel="stylesheet" href="<?php echo base_url() ?>assets/font-awesome/css/font-awesome.css">
-     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/stylesheet.css">
-     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/bootstrap.min.css">
-</head>
-<body>
-<nav class="navbar navbar-default"> 
-  <div class="container-fluid">
+<div class="navbar navbar-default navbar-fixed-top" role="navigation" id="myNavbar"> 
+  <div class="container">
     <!-- Brand and toggle get grouped for better mobile display/
          Merek dan toggle dikelompokkan untuk tampilan mobile yang lebih baik -->
     <div class="navbar-header">
@@ -24,18 +27,17 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <div class=navbar-brand>Toko Online</div>
+      <div class=navbar-brand>COSMIC</div>
       <!-- menampilkan "Toko Online" yang terletak di sisi paling kanan --> 
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling/
          Kumpulkan link nav, form, dan konten lainnya untuk Toggling -->
-
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         
       <ul class="nav navbar-nav navbar-right"> <!-- style membuat perintah yang dimunculkan diletakkan dikepojok kanan -->
         <li><?php echo anchor(base_url(), 'Home');?></li> <!-- menampilkan "Home" dengan fungsi kelanjutan ke- 
-                                                               -base_url/http://localhost/toko-online2/ -->
+        -base_url/http://localhost/toko-online2/ -->
         <li><?php echo anchor(base_url(), 'Kategori');?></li>
         <?php if($this->session->userdata('username2')) { ?>
             <li><?php echo anchor('customer/payment_confirmation', 'Payment Confirmation');?></li>
@@ -55,12 +57,13 @@
                 //-pada config autoload libraries maka dia akan menampilkan 0 sampai-
                 //-ada add shop baru terisi dan angka berubah sesuai isi kranjang shop
             ?>
-            <?=anchor('welcome/cart', $text_cart_url)?> <!-- pelengkap menampilkan "Inside Cart ... items",-
-                                                             menggunakan variabel "$text_cart_url" penampung data yang di atasnya -->
-                                                        <!-- fungsi kelanjutan ketika meng klik "Inside Cart ... items" -->
-                                                        <!-- "<=anchor('welcome/cart'", berfungsi menyediakan fungsi kelanjutan-
-                                                             -yang nanti di arahkan ke controller "welcome" pada function "cart" -->
-                                                        <!-- yang meng akses controller "welcome" pada function "cart" -->
+            <?=anchor('welcome/cart', $text_cart_url)?> 
+            <!-- pelengkap menampilkan "Inside Cart ... items",-
+                menggunakan variabel "$text_cart_url" penampung data yang di atasnya -->
+            <!-- fungsi kelanjutan ketika meng klik "Inside Cart ... items" -->
+            <!-- "<=anchor('welcome/cart'", berfungsi menyediakan fungsi kelanjutan-
+             -yang nanti di arahkan ke controller "welcome" pada function "cart" -->
+             <!-- yang meng akses controller "welcome" pada function "cart" -->
         </li>
         <?php if($this->session->userdata('username2')) { ?> <!-- kondisi dimana sedang login -->
             <li>
@@ -87,6 +90,4 @@
         
     </div><!-- /.navbar-collapse/Navbar-runtuh -->
   </div><!-- /.container-fluid/Wadah-cairan -->
-</nav>
-</body>
-</html>
+</div>
